@@ -30,7 +30,7 @@ def booksearch():
             book_array.append(book['volumeInfo']['imageLinks']['thumbnail'])
         # images = books['items'][0]['volumeInfo']['imageLinks']['thumbnail']
     # return author
-    return render_template('index.html', book_array = book_array, search_term= search_term )
+    return render_template('index.html', book_array = book_array)
 
     
 

@@ -3,4 +3,10 @@
         <button type="submit">Search</button>      
  </form>
 
-<img src= '{{img}}'>
+
+ 
+ {% for book in book_array %}
+ 
+    <img src= '{{book}}'>             
+    {{img}}
+{% endfor %}

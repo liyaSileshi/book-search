@@ -1,12 +1,71 @@
-<form action='/' method="GET">
-    <input type="search" name="q" placeholder="book Search">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BookApi</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">Book Search</a>
+    <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <!-- <a class="nav-item nav-link" href="#">Features</a> -->
+        <!-- <a class="nav-item nav-link" href="#">Pricing</a> -->
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="jumbotron text-center">
+    <h1>Book Search</h1>
+    <p class="lead">Find your book!</p>
+    <a href="#" class="btn btn-primary">Learn More</a>
+  </div>
+    <!-- <h1>Launch Page</h1> -->
+
+    <form action='/' method="GET">
+        <input type="search" name="q" placeholder="book Search">
         <button type="submit">Search</button>      
- </form>
+    </form>
 
 
  
- {% for book in book_array %}
- 
-    <img src= '{{book}}'>             
-    {{img}}
-{% endfor %}
+    {% for book in book_array %}
+    
+        <img src= '{{book}}'>             
+        {{img}}
+    {% endfor %}
+
+  <!-- BENEFITS -->
+  <div class="container mb-5 mt-5">
+    <div class = "pb-5 pt-5">
+    <div class="row">
+      <div class="col-lg-4">
+        <h3>Safe</h3>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+
+      <div class="col-lg-4">
+        <h3>Safe</h3>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+
+      <div class="col-lg-4">
+        <h3>Safe</h3>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+  <!-- CALL TO ACTION -->
+
+
+</body>
+</html>
+
+

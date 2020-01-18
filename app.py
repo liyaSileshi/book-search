@@ -18,7 +18,7 @@ def booksearch():
 
     # TODO: Make an API call to Tenor using the 'requests' library
     
-        response = requests.get(f'https://www.googleapis.com/books/v1/volumes?q={search_term}&maxResults=4')
+        response = requests.get(f'https://www.googleapis.com/books/v1/volumes?q={search_term}')
         
         # TODO: Get the first 10 results from the search results
         # books = json.loads(response.content)

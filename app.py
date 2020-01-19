@@ -14,7 +14,7 @@ def booksearch():
     # TODO: Extract query term from url
     if request.method == 'GET':
         search_term = request.args.get('q')
-        response = requests.get(f'https://www.googleapis.com/books/v1/volumes?q={search_term}&maxResults=20')
+        response = requests.get(f'https://www.googleapis.com/books/v1/volumes?q={search_term}')
         
 
         books = response.json()

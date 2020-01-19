@@ -12,3 +12,14 @@
     padding: 1.25em;
     background-color: #EB6864;
 }
+
+.footer{
+    margin-top: 13em;
+    padding: 6em !important;
+    padding-left: 40% !important;
+}
+
+.book-cover{
+    margin: 2em;
+    height: 400px;
+}

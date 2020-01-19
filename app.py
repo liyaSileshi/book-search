@@ -14,26 +14,21 @@ def booksearch():
     # TODO: Extract query term from url
     if request.method == 'GET':
         search_term = request.args.get('q')
-    #search_term = request.args.get("q")
-
-    # TODO: Make an API call to Tenor using the 'requests' library
-    
-        response = requests.get(f'https://www.googleapis.com/books/v1/volumes?q={search_term}')
+        response = requests.get(f'https://www.googleapis.com/books/v1/volumes?q={search_term}&maxResults=20')
         
-        # TODO: Get the first 10 results from the search results
-        # books = json.loads(response.content)
+
         books = response.json()
         book_array = []
         results = books['items']
         # print(results)
         for book in results:
             book_array.append(book['volumeInfo']['imageLinks']['thumbnail'])
-        # images = books['items'][0]['volumeInfo']['imageLinks']['thumbnail']
-    # return author
+
     return render_template('index.html', book_array = book_array)
 
-    
-
+# @app.route('/<book_id>')
+# def show_book():
+#     pass  
 
 if __name__ == '__main__':
     

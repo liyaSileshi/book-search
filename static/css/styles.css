@@ -1,0 +1,14 @@
+.search-form{
+    margin-left: 40%;
+    margin-bottom: 2em !important;
+}
+
+.search-input{
+    padding: 2em;
+    border-color: #EB6864;
+}
+
+.searchBtn{
+    padding: 1.25em;
+    background-color: #EB6864;
+}
